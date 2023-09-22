@@ -1,0 +1,40 @@
+<article>
+
+  <details style="margin-bottom: 20px">
+    <summary ><h1 style="display: inline; padding-left: 10px; letter-spacing: 0.1rem;">Section 1: Algorithms</h1></summary>
+
+    <ul class="archive">
+      {% for post in site.categories.algo %}
+        <li>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </details>
+
+  <details style="margin-bottom: 20px">
+    <summary ><h1 style="display: inline; padding-left: 10px; letter-spacing: 0.1rem;">Section 2: Math</h1></summary>
+
+    <ul class="archive">
+      {% for post in site.math reversed %}
+        <li>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </details>
+
+  <details style="margin-bottom: 20px">
+    <summary ><h1 style="display: inline; padding-left: 10px; letter-spacing: 0.1rem;">Section 3: School</h1></summary>
+
+    <ul class="archive">
+      {% for post in site.school reversed %}
+        <li>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </details>  

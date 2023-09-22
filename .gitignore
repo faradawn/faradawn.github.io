@@ -1,0 +1,13 @@
+.DS_Store
+.bundle
+.jekyll-cache
+.sass-cache
+Gemfile.lock
+_site
+*.gem
+vendor
+*test*
+.vscode
+settings.json
+*a.out*
+*my-temp*

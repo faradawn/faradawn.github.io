@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+main{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+  margin-bottom: 6rem;
+}
+
+h1{
+    font-size: 2rem;
+    margin: 5px 0;
+}
+h2{
+    margin: 4px 0;
+}
+h3{
+    margin: 3px 0;
+}
+h4{
+    margin: 2px 0;
+}
+
+/* ======== HOME SECTION ======== */
+
+.home-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.blob-mask{
+    width: 150px;
+    -webkit-mask-image: url(/assets/img/mask1.svg);
+    mask-image: url(/assets/img/mask1.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;  
+    mask-position: center;
+    -webkit-mask-position: center;
+    margin: 0;
+}
+
+.blob-img{
+    width: 150px;
+}
+
+.color-block{
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+}
+
+/* ABOUT */
+
+.card-grid{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    gap: 1rem;
+    margin-top: 30px;
+}
+
+.card-text{
+    min-width: 400px;
+}
+
+.card-img{
+    padding-top: 5px;
+    padding-left: 10px;
+    max-width: 50px;
+}

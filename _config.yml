@@ -1,0 +1,46 @@
+title: "Zeyuan Yang (Faradawn)"
+author: "Zeyuan Yang"
+description: "I program in C++."
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
+
+# Layout
+
+show_excerpts: false        # show article excerpts on the home page
+show_frame: false           # adds a gray frame to the site
+show_sidebar: true        # show a sidebar instead of the usual header
+minimal: false             # use a dark header
+
+# Menu
+
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {title: "Home", file: "index.md", icon: compass}
+  - {title: "Resume", url: "https://faradawn.github.io/assets/2024_Resume_Zeyuan_Yang_Data.pdf", icon: user}
+  - {title: "Algorithms", file: "algo.md", icon: code}
+
+external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Github, icon: github, url: "https://github.com/faradawn"}
+  - {title: YouTube, icon: youtube, url: "https://www.youtube.com/watch?v=N6ErzyjnrJY"}
+  - {title: Bilibili, icon: tv, url: "https://space.bilibili.com/49683148"}
+
+comments:
+#  disqus_shortname: ""    # see https://disqus.com/
+#  isso_domain: ""         # see https://posativ.org/isso/
+
+# bundle exec jekyll serve
+# http://127.0.0.1:4000
+
+plugins:
+ - jekyll-feed
+
+collections:
+  companies:
+    output: true
+  system_design:
+    output: true
+  math:
+    output: true
+  school:
+    output: true
