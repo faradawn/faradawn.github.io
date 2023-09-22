@@ -1,8 +1,5 @@
----
-title: "About"
-permalink: "/about/"
-layout: page
----
+# Welcome to Faradawn's Website
+It is nice to meet you!
 
 ### Install Jekyll
 - Default Mac Ruby 2.6.0 cannot `gem install jekyll`, permission denied. 
