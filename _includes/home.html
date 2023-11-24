@@ -25,10 +25,11 @@
 
             <!--==================== HOME ====================-->
             <section class="home-section" id="home">
+                <!-- Two side grid -->
                 <div class="home-grid">
                   <div>
-                    <h1>Zeyuan Yang.</h1>
-                    <h3>I program in C++. </h3>
+                    <h1>Zeyuan (Faradawn) Yang.</h1>
+                    <h3>Passionate about distributed storage systems.</h3>
                   </div>
                   <div>
                     <div class="blob-mask">
@@ -36,8 +37,34 @@
                     </div>  
                   </div>
                 </div>
-                
 
+                <section class="about-section" id="about">
+                  <h1>Education</h1>
+                  <p>
+                    I obtained my B.S. in Computer Science and Mathematics from the University of Chicago. I had the privilege to have Professor Haryadi Gunawi as my advisor. My research focuses on Cloud Storage, Distributed Systems, and Machine Learning for Systems.
+                  </p>
+
+                <!-- My research -->
+                <h1>Academic Research</h1>
+
+                <h3>1. "Achieving Predictable Latency in SSD Storage Clusters." [2023]</h3>
+                <p>To solve the unstable latency problem in cloud environments, we designed a light-weight neural network to estimate the completion time of an I/O request for each solid-state drive (SSD), which achieved 80-97% accuracy with less than 10 nanosecond overhead, bring stable latency across storage clusters. The paper is under submission to OSDI 2024.</p>
+
+                <h3>2. "Optimizing Cache Performance for Multi-Process Servers." [2023]</h3>
+                <p>Traditional cache prefetchers work well in sequential access workloads, but modern multi-process applications exhibit non-sequential access. Thus, we developed a machine learning approach to 1) identify an access stream and 2) then apply a classical algorithm on it. The hybrid method outperformed both pure ML method and traditional techniques, achieving near 90% hit rate on Microsoft Research Cambridge traces. </p>
+
+                <h3>3. "Scalability Study of Seagate’s Distributed System." [2022] </h3>
+                <p>To study how scalable Seagate's cloud storage, CORTX, was, I designed 7 workloads to determine the correlation between the throughput (read/write speed) and size of the cluster. By finding the optimal master-to-worker ratio, network pool, etc., I successfully produced a linear-scaling result that proved the scalability of their system. The results were accepted by the company. </p>
+
+                <!-- My Professional Experiences -->
+                </section>
+                <h1>Professional Experiences</h1>
+                <section id="Experiences">
+                    <!-- Js injects here  -->
+                </section>
+                
+                <!-- My hobby -->
+                <h1>Video Creation Hobby</h1>
                 <div class="image-gallery" style="margin-top: 20px">
                   <div class="image-item">
                     <a href="https://www.youtube.com/watch?v=N6ErzyjnrJY"><img src="/assets/img/thumbnail-1.png" width="200" height="150" alt="Image 1"></a>
@@ -59,28 +86,19 @@
                   </div>
                 </div>
 
-                <h1>IOS App: Latin Garden. </h1>
-                <h3>4.9 stars with 123 reviews.</h3>
+                <h1>App Creation Hobby </h1>
+                <h3>Latin Garden. 4.9 stars with 123 reviews on App Store.</h3>
                 
                 <a href="https://apps.apple.com/cn/app/%E6%8B%89%E4%B8%81%E5%9B%AD/id1570940286?platform=iphone"> <img src="/assets/img/latin-2.png"> </a>
 
-
+              <!--==================== ABOUT ====================-->
+            
 
             
 
-            <!--==================== ABOUT ====================-->
-            <section class="about-section" id="about">
-              <h1>About</h1>
-              <p>
-                As a child I gazed at the vault of stars, dreaming to explore the cosmos and sail among the galaxy. But one day I met a problem: “How to use the minimum number of satellites to cover the maximum area of Earth”, which drove me into a deep meditation. It wasn’t until highschool that I encountered algorithms, which suddenly opened my eyes: Wow, that satellite problem could be solved by linear programming! From then on, algorithms became a part of my life. It not only could fulfill one’s wildest dream, but also advance the society forward.
-              </p>
+            
                 
-            </section>
             
-            <h1>Experiences</h1>
-            <section id="Experiences">
-                <!-- Js injects here  -->
-            </section>
 
         </main>
     </body>
@@ -133,28 +151,28 @@
       ],
       icon: "/assets/img/exp-3.png"
     },
-    {
-      company: "Solved Chinese",
-      position: "Software Engineer",
-      link: "https://solvedchinese.org/index/",
-      description: [
-        "Built a React – Django web app used by 10+ schools to teach Chinese.",
-        "Administrated a PostgreSQL database with complex schema and managed authentication.",
-        "Endorsed by St. Paul high school and improved based on its feedback."
-      ],
-      icon: "/assets/img/exp-4.png"
-    },
-    {
-      company: "iOS App: Latin Gardin",
-      position: "App Developer",
-      link: "https://github.com/faradawn/latin-garden",
-      description: [
-        "Built a React Native app that received a 4.9 rating with 116+ reviews on App Store.",
-        "Endorsed by students from the Beijing Forestry University.",
-        "Implemented authentication and async storage."
-      ],
-      icon: "/assets/img/exp-5.png"
-    },
+    // {
+    //   company: "Solved Chinese",
+    //   position: "Software Engineer",
+    //   link: "https://solvedchinese.org/index/",
+    //   description: [
+    //     "Built a React – Django web app used by 10+ schools to teach Chinese.",
+    //     "Administrated a PostgreSQL database with complex schema and managed authentication.",
+    //     "Endorsed by St. Paul high school and improved based on its feedback."
+    //   ],
+    //   icon: "/assets/img/exp-4.png"
+    // },
+    // {
+    //   company: "iOS App: Latin Gardin",
+    //   position: "App Developer",
+    //   link: "https://github.com/faradawn/latin-garden",
+    //   description: [
+    //     "Built a React Native app that received a 4.9 rating with 116+ reviews on App Store.",
+    //     "Endorsed by students from the Beijing Forestry University.",
+    //     "Implemented authentication and async storage."
+    //   ],
+    //   icon: "/assets/img/exp-5.png"
+    // },
     {
       company: "ACM-ICPC Programming Contest",
       position: "Silver medal winner",
@@ -168,40 +186,45 @@
     },
   ]
 
-  var exp = document.getElementById("Experiences");
-  for(var i = 0; i < exps.length; i++){
-    var cardDiv = document.createElement('div');
-    cardDiv.className = "card-grid";
-
-    var a = document.createElement('a');
-    a.href = exps[i].link;
-    var img = document.createElement('img');
-    img.src = exps[i].icon;
-    img.className = "card-img";
-    a.appendChild(img);
-
-    var h2 = document.createElement('h2');
-    h2.appendChild(document.createTextNode(exps[i].company));
-
-    var h4 = document.createElement('h4');
-    var italy = document.createElement('i');
-    italy.appendChild(document.createTextNode(exps[i].position));
-    h4.appendChild(italy);
-
-    var ul = document.createElement('ul');
-    exps[i].description.forEach(item => {
-      var li = document.createElement('li');
-      li.appendChild(document.createTextNode(item));
-      ul.appendChild(li);
-    })
-
-    var textDiv = document.createElement('div');
-    textDiv.appendChild(h2);
-    textDiv.appendChild(h4);
-    textDiv.appendChild(ul);
-
-    cardDiv.append(a);
-    cardDiv.append(textDiv);
-    exp.appendChild(cardDiv);
+  function fillExperience(elementName){
+    var exp = document.getElementById(elementName);
+    for(var i = 0; i < exps.length; i++){
+      var cardDiv = document.createElement('div');
+      cardDiv.className = "card-grid";
+  
+      var a = document.createElement('a');
+      a.href = exps[i].link;
+      var img = document.createElement('img');
+      img.src = exps[i].icon;
+      img.className = "card-img";
+      a.appendChild(img);
+  
+      var h2 = document.createElement('h2');
+      h2.appendChild(document.createTextNode(exps[i].company));
+  
+      var h4 = document.createElement('h4');
+      var italy = document.createElement('i');
+      italy.appendChild(document.createTextNode(exps[i].position));
+      h4.appendChild(italy);
+  
+      var ul = document.createElement('ul');
+      exps[i].description.forEach(item => {
+        var li = document.createElement('li');
+        li.appendChild(document.createTextNode(item));
+        ul.appendChild(li);
+      })
+  
+      var textDiv = document.createElement('div');
+      textDiv.appendChild(h2);
+      textDiv.appendChild(h4);
+      textDiv.appendChild(ul);
+  
+      cardDiv.append(a);
+      cardDiv.append(textDiv);
+      exp.appendChild(cardDiv);
+    }
   }
+
+  fillExperience("Experiences");
+
 </script>
