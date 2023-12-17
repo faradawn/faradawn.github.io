@@ -1,6 +1,6 @@
-title: "Zeyuan Yang (Faradawn)"
+title: "Zeyuan (Faradawn) Yang"
 author: "Zeyuan Yang"
-description: "I program in C++."
+description: "Researcher in systems and ML."
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -17,7 +17,7 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {title: "Home", file: "index.md", icon: compass}
-  - {title: "Resume", url: "https://faradawn.github.io/assets/2024_Resume_Zeyuan_Yang_Data.pdf", icon: user}
+  - {title: "Resume", url: "https://faradawn.github.io/assets/2024_Resume_Zeyuan_Yang_Master.pdf", icon: user}
   - {title: "Algorithms", file: "algo.md", icon: code}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons

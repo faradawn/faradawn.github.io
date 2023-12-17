@@ -29,7 +29,7 @@
                 <div class="home-grid">
                   <div>
                     <h1>Zeyuan (Faradawn) Yang.</h1>
-                    <h3>Passionate about distributed storage systems.</h3>
+                    <h3>Researcher in distributed systems and ML.</h3>
                   </div>
                   <div>
                     <div class="blob-mask">
@@ -41,22 +41,22 @@
                 <section class="about-section" id="about">
                   <h1>Education</h1>
                   <p>
-                    I obtained my B.S. in Computer Science and Math from the <a href="https://cs.uchicago.edu/" target="_blank" style="color: #f70000;">University of Chicago</a>. I had the privilege to have <a href="https://people.cs.uchicago.edu/~haryadi/" target="_blank" style="color: #f70000;">Professor Haryadi Gunawi</a> as my advisor. My research focuses on Cloud Storage, Distributed Systems, and Machine Learning for Systems.
+                    I obtained my B.S. in Computer Science and Math from the <a href="https://cs.uchicago.edu/">University of Chicago</a>. I had the privilege to have <a href="https://people.cs.uchicago.edu/~haryadi/" >Professor Haryadi Gunawi</a> as my advisor. My research focuses on Cloud Storage, Distributed Systems, and Machine Learning for Systems.
                 </p>
                 
                 
 
                 <!-- My research -->
-                <h1>Academic Research</h1>
+                <h1>Research Experiences</h1>
 
-                <h3>1. "Achieving Predictable Latency in SSD Storage Clusters." [2023]</h3>
-                <p>To solve the unstable latency problem in cloud environments, we designed a light-weight neural network to estimate the completion time of an I/O request for each solid-state drive (SSD), which achieved 80-97% accuracy with less than 10 nanosecond overhead, bring stable latency across storage clusters. The paper is under submission to OSDI 2024.</p>
+                <h3>1. "Reducing I/O Latency in SSD Storage Clusters." [2023]</h3>
+                <p>Disk read and write (I/O) operations incur the most latency in cloud environments. To avoid admitting an I/O to a "busy" solid-state drive (SSD), we designed a lightweight neural network for each SSD to estimate the completion time. Our model successfully reduced average I/O latencies by up to 79.6% with 10 nanoseconds overhead.</p>
 
                 <h3>2. "Optimizing Cache Performance for Multi-Process Servers." [2023]</h3>
-                <p>Traditional cache prefetchers work well in sequential access workloads, but modern multi-process applications exhibit non-sequential access. Thus, we developed a machine learning approach to 1) identify an access stream and 2) then apply a classical algorithm on it. The hybrid method outperformed both pure ML method and traditional techniques, achieving near 90% hit rate on Microsoft Research Cambridge traces. </p>
+                <p>Traditional cache prefetchers struggle with the non-sequential access of modern multi-process applications. We develop a hybrid approach combining machine learning to identify access streams with classical algorithms for processing. This method outperforms both ML and huristic methods by up to 10% on traces such as Microsfot Research Cambridge. </p>
 
                 <h3>3. "Scalability Study of Seagate’s Distributed System." [2022] </h3>
-                <p>To study how scalable Seagate's cloud storage, CORTX, was, I designed 7 workloads to determine the correlation between the throughput (read/write speed) and size of the cluster. By finding the optimal master-to-worker ratio, network pool, etc., I successfully produced a linear-scaling result that proved the scalability of their system. The results were accepted by the company. </p>
+                <p>Seagate Technology's distributed storage faced a latency problem. I used the Analytic and Diagnostic Database subsystem to collect metrics like queue depths and operation latencies. Compiling this data, I created a detailed graph of each component's time consumption, leading to a system upgrade that improved throughput by 20%. </p>
 
                 <!-- My Professional Experiences -->
                 </section>
