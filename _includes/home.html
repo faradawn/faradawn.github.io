@@ -41,7 +41,7 @@
                 <section class="about-section" id="about">
                   <h1>Education</h1>
                   <p>
-                    I obtained my B.S. in Computer Science and Math from the <a href="https://cs.uchicago.edu/">University of Chicago</a>. I had the privilege to have <a href="https://people.cs.uchicago.edu/~haryadi/" >Professor Haryadi Gunawi</a> as my advisor. My research focuses on Cloud Storage, Distributed Systems, and Machine Learning for Systems.
+                    I obtained my B.S. in Mathematics and M.S. in Computer Science from the <a href="https://cs.uchicago.edu/">University of Chicago</a>. I had the privilege to have <a href="https://people.cs.uchicago.edu/~haryadi/" >Professor Haryadi Gunawi</a> as my advisor. My research focuses on Cloud Storage, Distributed Systems, and Machine Learning for Systems.
                 </p>
                 
                 
@@ -49,10 +49,10 @@
                 <!-- My research -->
                 <h1>Research Experiences</h1>
 
-                <h3>1. "Optimizing Cache Performance for Multi-Process Servers." [2023]</h3>
+                <h3>1. "Leveraging AI for Faster Storage Access: a Graph-Neural-Network-Based Prefetcher" [2023] <a href="/assets/files/Faradawn_thesis_paper_v3.pdf">[pdf]</a></h3>
                 <p>Traditional cache prefetchers struggle with the non-sequential access of modern multi-process applications. We develop a hybrid approach combining machine learning to identify access streams with classical algorithms for processing. This method outperforms both ML and huristic methods by up to 10% on traces such as Microsfot Research Cambridge. </p>
 
-                <h3>2. "Byte-VAE: Novel Memory-Efficient Image Generation Model." [2023] <a href="https://drive.google.com/file/d/1F72yxcFz_KXTFHFI_6JfC47UZlyiRD3b/view">[pdf]</a></h3>
+                <h3>2. "Byte-VAE: Novel Memory-Efficient Image Generation Model." [2023] <a href="/assets/files/ByteVAE.pdf">[pdf]</a></h3>
                 <p>Vector-Quantize Variational Auto-Encoder (VQ-VAE) suffers from high memory usage due to need of a codebook. We designed an innovative rounding method that eliminates the in-memory codebook, achieving near-zero memory consumption while maintaining identical image generation quality.</p>
 
                 <h3>3. "Reducing I/O Latency in SSD Clusters with Neural Network." [2023]</h3>
@@ -92,9 +92,15 @@
                 </div>
 
                 <h1>App Creation Hobby </h1>
-                <h3>Latin Garden. 4.9 stars with 123 reviews on App Store.</h3>
+                <h3>Published 3 apps that obtained a 4.9 rating with 5.6k downloads on App Store. The latest app won $10,000 at 2024 Ai4Science Hackathon.</h3>
+                <!-- three bullet points -->
+                <ul>
+                  <li><a href="https://apps.apple.com/cn/app/%E6%8B%89%E4%B8%81%E5%9B%AD/id1570940286">"Latin Garden"</a> -- a language learning app endorsed by students from Beijing Forestry University.</li>
+                  <li><a href="https://apps.apple.com/lu/app/%E7%BF%BB%E6%BB%9A%E7%9A%84%E5%B0%8F%E6%80%AA/id1571057749">"Rolling Monsters"</a> -- a game that reduces stress for college students.</li>
+                  <li><a href="https://apps.apple.com/us/app/flowers-dont-die/id6504419644">"Flowers Don't Die"</a> -- an educational app that uses voice AI to accelerate code learning.</li>
+                </ul>
                 
-                <a href="https://apps.apple.com/cn/app/%E6%8B%89%E4%B8%81%E5%9B%AD/id1570940286?platform=iphone"> <img src="/assets/img/latin-2.png"> </a>
+                <a href="https://apps.apple.com/cn/app/%E6%8B%89%E4%B8%81%E5%9B%AD/id1570940286?platform=iphone"> <img src="/assets/img/app-store-statistics.png"> </a>
 
               <!--==================== ABOUT ====================-->
             
@@ -112,6 +118,17 @@
 <script>
   
   var exps = [
+    {
+      company: "Ovative Group",
+      position: "Data Engineer",
+      link: "https://ovative.com/",
+      description: [
+        "Enhanced data ingestion from 13.31s to 1.17s by introducing Hive partition to a Hadoop storage.",
+        "Reduced 4.7x processing time by converting CSV to Parquet, creating the first Delta Lake for ETL data analytics.",
+        "Managed a migration of 32 platforms from GCP to Azure Databricks to adopt Apache Spark ecosystem."
+      ],
+      icon: "/assets/img/exp-7.png"
+    },
     {
       company: "TikTok",
       position: "Software Engineer",
@@ -133,17 +150,6 @@
         "Implemented a 16-node Kubernetes deployment by configuring RAM and CPU to enable scalability."
       ],
       icon: "/assets/img/exp-1.png"
-    },
-    {
-      company: "Ovative Group",
-      position: "Data Engineer",
-      link: "https://ovative.com/",
-      description: [
-        "Enhanced data ingestion from 13.31s to 1.17s by introducing Hive partition to a Hadoop storage.",
-        "Reduced 4.7x processing time by converting CSV to Parquet, creating the first Delta Lake for ETL data analytics.",
-        "Managed a migration of 32 platforms from GCP to Azure Databricks to adopt Apache Spark ecosystem."
-      ],
-      icon: "/assets/img/exp-7.png"
     },
     {
       company: "Byto Inc.",
